@@ -1,0 +1,290 @@
+body {
+	background-color: white;
+	background-image: url('img/bgs/freebie_cajoline_romanticpapers_cu_7_03.jpg');
+  background-size: 100%;
+	/*background-image: url(img/bg1.jpg);*/
+	/*font-family: 'Amatic SC', cursive;*/
+	font-family: 'Poiret One', cursive;
+	/*font-family: 'Gramond', serif;*/
+	font-weight: 100;
+	margin: 0;
+  padding: 0;
+  width: 100%;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+nav {
+	width: 100%;
+}
+.conteiner {
+	margin: 0;
+	padding: 0;
+}
+/*ЛОГО*/
+.header {
+  border: solid 3px green;
+  /*background-image: url('/img/bgs/IMG_20200226_1940261.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;*/
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/*ЛОГО*/
+.logo {
+  /*border: solid 3px red;*/
+  margin-top: 50px;
+}
+.logo img{
+  width: 600px;
+  height: auto;
+}
+/*МЕНЮ*/
+nav {
+  /*border: solid 3px blue;*/
+  display: flex;
+  justify-content: space-between;
+}
+.social {
+  display: flex;
+  margin-top: 30px;
+  /*border: solid 3px purple;*/
+}
+.social img {
+  width: 50px;
+  margin-left: 30px;
+}
+.social img:last-child {
+}
+.menu {
+	margin-top: 30px;
+	font-size: 25pt;
+	height: 100px;
+	display: flex;
+	/*border: solid 3px purple;*/
+}
+
+.menu a {
+  /*border: solid 3px purple;*/
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	color: white;
+	transform: scale(1);
+  transition-duration: 0.5s;
+}
+.menu a:last-child {
+}
+.menu a:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+.submenu {
+	display: block;
+	font-size: 20pt;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	width: 200px;
+    transform: scaleY(0);
+    transition-duration: 0.5s;
+    transform-origin: 0 0;
+
+}
+.submenu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.submenu li {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-left: 1px solid black;
+}
+.menu li:hover .submenu {
+    transform: scaleY(1);
+    transition-duration: 0.5s;
+}
+
+/*АЛЬТЕРНАТИВНОЕ МЕНЮ*/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.other-menu {
+	display: flex;
+	margin-right: 10px;
+	height: 110px;
+	font-size: 28pt;
+}
+.other-menu ul {
+	display: block;
+	
+}
+.other-menu li {
+	display: inline-block;
+	list-style: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.other-submenu {
+	display: block;
+	font-size: 20pt;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	width: 200px;
+    transform: scaleY(0);
+    transition-duration: 0.5s;
+    transform-origin: 0 0;
+
+}
+.other-submenu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.other-submenu li {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-left: 1px solid black;
+}
+.other-menu li:hover .other-submenu {
+    transform: scaleY(1);
+    transition-duration: 0.5s;
+}
+.main {
+	border: solid 3px red;
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+.description {
+  border: solid 3px blue;
+  margin: 50px;
+}
+.items {
+  border: solid 3px blue;
+  display: flex;
+  justify-content: space-around;
+}
+.item {
+  border: solid 3px green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+.item img {
+  margin: 15px;
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+}
+.item button {
+  border: solid 1px black;
+  margin: 5px;
+  
+}
+.notes {
+  font-style: italic;
+}
+/*ПОДВАЛ*/
+footer {
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #19131a;
+  color: white;
+  border: solid 2px red;
+}
+footer a {
+  color: white;
+  margin: 20px;
+}
+.footer {
+  border: solid 2px green;
+  width: 100%;
+  margin 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-menu {
+  border: solid 2px purple;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.flower {
+  border: solid 2px purple;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  background-image: url(../img/roses/kisspng-watercolour-flowers-watercolor-painting-floral-bou-5b888e9fdc5e94.5276820315356760639026.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.footer-social {
+  border: solid 2px purple;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+/*кнопка вверх*/
+#toTop {
+width: 10px;
+padding:5px;
+margin-right: 20px;
+position:fixed;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:50px;
+}
+@media (max-width: 1200px) {
+	.menu li{
+		display: flex;
+		width: 50%;
+	}
+	.logo img{
+		width: 500px;
+}
+@media (max-width: 800px){
+    .logo {
+        margin: 10px;
+    }
+    .logo img {
+        width: 100%;
+    }
+	.menu {
+		flex-direction: column;
+		height: 300px;
+		margin: 10px;
+	}
+	.menu ul {
+		margin: auto;
+	}
+	.menu li {
+		margin: 20px 0px;
+	}
+	.description {
+	  margin: 15px;
+	}
+	.items {
+	  flex-direction: column;
+	}
+	.flower {
+	  display: none;
+	}
+}
