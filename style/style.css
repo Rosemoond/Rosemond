@@ -1,0 +1,497 @@
+body {
+	background-color: white;
+	/*background-image: url(img/bg1.jpg);*/
+	/*font-family: 'Amatic SC', cursive;*/
+	font-family: 'Poiret One', cursive;
+	/*font-family: 'Gramond', serif;*/
+	font-weight: 600;
+	margin: 0;
+  padding: 0;
+  width: 100%;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.header {
+  /*border: solid 3px green;*/
+  /*Винтаж*/
+  /*background-image: url('img/bgs/freebie_cajoline_romanticpapers_cu_7_03.jpg');*/
+  
+  /*цветы*/
+  /*background-image: url('/img/bgs/IMG_20200226_1940261.jpg');/*духи*/
+  /*background-image: url('/img/roses/298139.jpg');/*оранжевые розы*/
+  /*background-image: url('/img/roses/IMG_20200319_090839_979.jpg');/*засушеные розы*/
+  
+  /*бутылки*/
+  background-image: url('/img/bgs/IMG_20200320_101035_915.jpg');
+  /*background-image: url('/img/bgs/glass-rod-1482836_1920.jpg');/*мерный стакан*/
+  /*background-image: url('/img/bgs/perfume-4882311_1920.jpg');/*белые бутылки*/
+  
+  background-size: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+}
+/*ЛОГО*/
+.logo {
+  /*border: solid 3px red;*/
+  display: flex;
+  justify-content: center;
+}
+.logo img{
+  width: 600px;
+  height: auto;
+}
+/*МЕНЮ*/
+nav {
+  /*border: solid 3px blue;*/
+  display: flex;
+  justify-content: space-between;
+}
+.social {
+  display: flex;
+  margin-top: 35px;
+  /*border: solid 3px purple;*/
+}
+.social img {
+  width: 40px;
+  margin-left: 30px;
+}
+.social img:last-child {
+}
+.menu {
+	font-size: 25pt;
+	height: 100px;
+	display: flex;
+	margin-top: 15px;
+}
+
+.menu a {
+  /*border: solid 3px purple;*/
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	color: black;
+	transform: scale(1);
+  transition-duration: 0.5s;
+}
+.menu a:last-child {
+}
+.menu a:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+.submenu {
+	display: block;
+	font-size: 20pt;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	width: 200px;
+    transform: scaleY(0);
+    transition-duration: 0.5s;
+    transform-origin: 0 0;
+
+}
+.submenu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.submenu li {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-left: 1px solid black;
+}
+.menu li:hover .submenu {
+    transform: scaleY(1);
+    transition-duration: 0.5s;
+}
+
+/*АЛЬТЕРНАТИВНОЕ МЕНЮ*/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.other-menu {
+	display: flex;
+	margin-right: 10px;
+	height: 110px;
+	font-size: 28pt;
+}
+.other-menu ul {
+	display: block;
+	
+}
+.other-menu li {
+	display: inline-block;
+	list-style: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.other-submenu {
+	display: block;
+	font-size: 20pt;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	width: 200px;
+    transform: scaleY(0);
+    transition-duration: 0.5s;
+    transform-origin: 0 0;
+
+}
+.other-submenu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.other-submenu li {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-left: 1px solid black;
+}
+.other-menu li:hover .other-submenu {
+    transform: scaleY(1);
+    transition-duration: 0.5s;
+}
+/*хвастушки*/
+.container {
+  border: solid 3px red;
+	display: flex;
+	justify-content: space-around;
+	margin-left: 50px;
+	margin-right: 50px;	
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.about {
+	background-image: url(img/circles/13.png);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	height: 250px;
+}
+.about-title {
+}
+.about-title h2 {
+	text-align: center;
+	font-size: 16pt;
+	font-weight: bold;		
+}
+/*.about-description {
+	padding: 0 40px;
+}
+.about-description p {
+	text-align: center;
+	font-size: 12pt;
+}
+*/
+/*ароматы*/
+.aromas {
+	display: flex;
+	justify-content: space-around;
+	border: solid 3px red;
+}
+.aromas button {
+	font-size: 15pt;
+	margin: 20px;
+	border: none;
+	background-color: white;
+}
+/*КОНТЕНТ*/
+.main {
+  border: solid 3px red;
+}
+.main-witcher {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+.main-txf {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+.main-autor {
+  color: black;
+  display: flex;
+  flex-direction: column;
+	margin: 20px;
+}
+
+.btn {
+	border: 1px solid white;
+	padding: 7px;
+	transform: scale(1);
+  transition-duration: 0.5s;
+    color: white;
+    text-align: center;
+}
+.btn:hover {
+	transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.btn a {
+	color: white;
+}
+
+.parf {
+	color: white;
+	margin: 20px;
+	height: 600px;
+
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+/*.info p {
+	align-items: flex-end;
+}*/
+
+.names {
+	float: top;
+	margin-top: 20px;
+}
+
+.main-description {
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+	margin-right: 50px;
+	width: 30%; 
+	font-size: 15pt;
+}
+
+#yenn {
+	background-image: url(img/bgs/yenn1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#triss {
+	background-image: url(img/bgs/triss2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#geralt {
+	background-image: url(img/bgs/geralt.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#dana {
+	background-image: url(img/txf/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+#dana .names {
+  margin-right: 50px;
+}
+#dana .info {
+  border: solid 2px red;
+  align-items: flex-end;
+}
+#fox {
+	background-image: url(img/txf/2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#milk-flower {
+  background-image: url(img/autor/2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#milk-fruit {
+  background-image: url(img/autor/3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#rose-rose {
+  background-image: url(img/autor/4.jpg);
+  background-repeat: no-repeat;
+	background-size: cover;
+}
+#liliak-storm {
+  background-image: url(img/autor/5.jpg);
+  background-repeat: no-repeat;
+	background-size: cover;
+}
+#milk-fruit .info, #milk-flower .info, #rose-rose .info, #liliak-storm .info {
+  align-items: center;
+	text-align: center;
+}
+/*ПОДВАЛ*/
+footer {
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #19131a;
+  color: white;
+  border: solid 2px red;
+}
+footer a {
+  color: white;
+  margin: 20px;
+}
+.footer {
+  border: solid 2px green;
+  width: 100%;
+  margin 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-menu {
+  border: solid 2px purple;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.flower {
+  border: solid 2px purple;
+  margin: 20px;
+  width: 30vw;
+  background-image: url(../img/roses/kisspng-watercolour-flowers-watercolor-painting-floral-bou-5b888e9fdc5e94.5276820315356760639026.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.footer-social {
+  border: solid 2px purple;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.icons {
+	top: 0px;	
+}
+.icons img {
+	display: flex;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+
+}
+/*кнопка вверх*/
+#toTop {
+width: 10px;
+padding:5px;
+margin-right: 20px;
+position:fixed;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:50px;
+}
+@media (max-width: 1200px) {
+	.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	.menu li{
+		display: flex;
+		width: 50%;
+	}
+	.logo img{
+		width: 500px;
+	}
+	/*ПОДВАЛ*/
+	.icons img {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	.contacts {
+		background-size: 400px;
+	}
+	.parf {
+		height: 400px;
+	}
+}
+@media (max-width: 800px){
+  /*хедер*/
+  .logo {
+    position: absolute;
+    align-self: center;
+    border: solid 3px pink;
+  }
+  .logo img {
+    width: 300px;
+  }
+  .header {
+    background-size: cover;
+  }
+    
+	/*Меню*/
+	nav {
+	  margin-top: 150px;
+	  flex-direction: column;
+	  align-items: center;
+	}
+	.menu {
+	  flex-direction: column;
+	  align-items: center;
+	}
+	.social img {
+	  margin-left: 15px;
+	  margin-right: 15px;
+	}
+	.container {
+		flex-direction: column;
+		margin: 10px;
+	}
+	.about {
+		margin: auto;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.names img {
+		margin: 20px;
+		width: 200px;
+	}
+	.btn {
+		font-size: 10pt;
+	}
+	.main-description {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 50%; 
+  }
+  .flower {
+    display: none;
+  }
+  
+}
